@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Ka Aoll Sayang 💜🐯</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- FLOATING DECORATION -->
+    <div class="floating tiger1">🐯</div>
+    <div class="floating tiger2">🐯</div>
+    <div class="floating heart1">💜</div>
+    <div class="floating heart2">♡</div>
+
+    <!-- ================= OPENING ================= -->
+
+    <section id="opening" class="page opening">
+
+        <div class="stars">✦ ✧ ✦</div>
+
+        <div class="tiger">
+            🐯
+        </div>
+
+        <p class="small-title">
+            a little surprise for
+        </p>
+
+        <h1>
+            Ka Aoll<br>
+            <span>Sayang 💜</span>
+        </h1>
+
+        <p class="intro">
+            Someone prepared something special<br>
+            just for you...
+        </p>
+
+        <button class="main-btn" onclick="openWebsite()">
+            OPEN MY GIFT 🎁
+        </button>
+
+    </section>
+
+
+    <!-- ================= MAIN WEBSITE ================= -->
+
+    <main id="mainContent" style="display:none;">
+
+        <!-- NAVBAR -->
+
+        <nav>
+            <div class="logo">
+                🐯 AOLL'S DAY
+            </div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#playlist">Playlist</a>
+                <a href="#memories">Memories</a>
+                <a href="#letter">Letter</a>
+            </div>
+        </nav>
+
+
+        <!-- ================= HOME ================= -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    today is a special day...
+                </p>
+
+                <h1>
+                    Happy Birthday,
+                    <span>Ka Aoll Sayang 💜</span>
+                </h1>
+
+                <p>
+                    Another year, another beautiful chapter.
+                    I hope this little website can make your
+                    special day a little more special. 🐯
+                </p>
+
+                <div class="hoshi-card">
+                    <div class="hoshi-placeholder">
+                        <img src="images/hoshi.jpg"
+                             alt="Hoshi"
+                             onerror="this.style.display='none'">
+
+                        <span>🐯</span>
+                    </div>
+
+                    <div>
+                        <p>birthday companion</p>
+                        <h3>HOSHI 🐯</h3>
+                        <small>
+                            tiger is watching over your birthday ✨
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-tiger">
+                🐯
+                <span>♡</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= PLAYLIST ================= -->
+
+        <section id="playlist" class="section">
+
+            <p class="small-title">
+                🎧 music corner
+            </p>
+
+            <h2>
+                Let's play Aollllv's<br>
+                <span>favorite songs.</span>
+            </h2>
+
+            <p class="section-desc">
+                Put your headphones on and enjoy your favorite songs. 💜
+            </p>
+
+
+            <div class="music-player">
+
+                <div class="music-cover">
+                    🐯
+                </div>
+
+                <div class="music-info">
+
+                    <p id="nowPlaying">
+                        Choose a song...
+                    </p>
+
+                    <small id="artist">
+                        Aollllv's playlist 💜
+                    </small>
+
+                    <div class="music-controls">
+
+                        <button onclick="previousSong()">⏮</button>
+
+                        <button class="play-btn"
+                                onclick="toggleMusic()"
+                                id="playButton">
+                            ▶
+                        </button>
+
+                        <button onclick="nextSong()">⏭</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="song-list">
+
+                <div class="song"
+                     onclick="playSong(0)">
+                    <span>01</span>
+                    <div>
+                        <b>CHANGE UP</b>
+                        <small>SEVENTEEN</small>
+                    </div>
+                    <span>▶</span>
+                </div>
+
+
+                <div class="song"
+                     onclick="playSong(1)">
+                    <span>02</span>
+                    <div>
+                        <b>Smile Flower</b>
+                        <small>SEVENTEEN</small>
+                    </div>
+                    <span>▶</span>
+                </div>
+
+
+                <div class="song"
+                     onclick="playSong(2)">
+                    <span>03</span>
+                    <div>
+                        <b>PINOCCHIO (feat. So!YoON!)</b>
+                        <small>HxW, So!YoON!</small>
+                    </div>
+                    <span>▶</span>
+                </div>
+
+
+                <div class="song"
+                     onclick="playSong(3)">
+                    <span>04</span>
+                    <div>
+                        <b>Baby, Honey</b>
+                        <small>HOSHI</small>
+                    </div>
+                    <span>▶</span>
+                </div>
+
+
+                <div class="song"
+                     onclick="playSong(4)">
+                    <span>05</span>
+                    <div>
+                        <b>Cheers to youth</b>
+                        <small>Vocal Team — SEVENTEEN</small>
+                    </div>
+                    <span>▶</span>
+                </div>
+
+
+                <div class="song"
+                     onclick="playSong(5)">
+                    <span>06</span>
+                    <div>
+                        <b>Water</b>
+                        <small>HipHop Team — SEVENTEEN</small>
+                    </div>
+                    <span>▶</span>
+                </div>
+
+
+                <div class="song"
+                     onclick="playSong(6)">
+                    <span>07</span>
+                    <div>
+                        <b>I Don't Understand But I Luv U</b>
+                        <small>Performance Team — SEVENTEEN</small>
+                    </div>
+                    <span>▶</span>
+                </div>
+
+            </div>
+
+            <audio id="audioPlayer"></audio>
+
+        </section>
+
+
+        <!-- ================= MEMORIES ================= -->
+
+        <section id="memories" class="section memories">
+
+            <p class="small-title">
+                📸 little memories
+            </p>
+
+            <h2>
+                A few moments<br>
+                <span>worth remembering.</span>
+            </h2>
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+                    <img src="images/2.jpg"
+                         alt="Memory 1"
+                         onerror="this.src='https://placehold.co/500x600/e9ddff/76528f?text=Your+Photo+Here'">
+                    <p>Aollllv's 💜</p>
+                </div>
+
+                <div class="photo-card big">
+                    <img src="images/1.jpg"
+                         alt="Memory 2"
+                         onerror="this.src='https://placehold.co/500x700/e9ddff/76528f?text=Your+Photo+Here'">
+                    <p>AooCHi 🐯</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/3.jpg"
+                         alt="Memory 3"
+                         onerror="this.src='https://placehold.co/500x600/e9ddff/76528f?text=Your+Photo+Here'">
+                    <p>kaol ✨</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LETTER ================= -->
+
+        <section id="letter" class="letter-section">
+
+            <div class="letter">
+
+                <div class="letter-top">
+                    💌
+                </div>
+
+                <p class="small-title">
+                    a little letter
+                </p>
+
+                <h2>
+                    For Ka Aoll<br>
+                    <span>Sayang 💜</span>
+                </h2>
+
+                <div class="letter-text">
+
+                    <p>
+                        happiieee bdaaayyyy kaolll sayangggg
+                        💞💞💞💞
+                    </p>
+
+                    <p>
+                        wishing you a birthday filled with
+                        love, fun, and surprise. 👩🏻🎂🐯🤍
+                    </p>
+
+                    <p>
+                        Semoga hari ini menjadi salah satu
+                        hari yang paling menyenangkan buat kamu.
+                        Semoga semua hal baik selalu datang
+                        menghampiri kamu.
+                    </p>
+
+                    <p>
+                        KA AOL ISTRI OCHI, LOPE OCHI, SAYANG OCHI, CINTA OCHI, SAYANG OCHI
+                    </p> 
+
+                </div>
+
+                <p class="signature">
+                    with lots of love,<br>
+                    <b>someone who cares about you 💜</b>
+                </p>
+                <p class="signature">
+                    <p class="signature"> - DEDER PACAR DIKEY - </p>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GIFT ================= -->
+
+        <section class="gift-section">
+
+            <p class="small-title">
+                one last thing...
+            </p>
+
+            <h2>
+                I have a little<br>
+                <span>surprise for you.</span>
+            </h2>
+
+            <button class="gift-button"
+                    onclick="openGift()">
+                🎁
+            </button>
+
+            <p>
+                click the gift 🐯
+            </p>
+
+            <div id="giftMessage" class="gift-message">
+
+                <div class="big-tiger">
+                    🐯💜
+                </div>
+
+                <h2>
+                    SURPRISEEEE! 🎉
+                </h2>
+
+                <p>
+                    Happy Birthday once again,
+                    Ka Aoll Sayang! 💞
+                    <br><br>
+                    Semoga tahun ini penuh dengan
+                    cerita indah, tawa, keberuntungan,
+                    dan banyak kebahagiaan.
+                    <br><br>
+                    Stay happy, stay healthy,
+                    and keep shining! ✨
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <div>
+                🐯 💜 🐯
+            </div>
+
+            <p>
+                made specially for Ka Aoll Sayang
+            </p>
+
+            <small>
+                Happy Birthday ✦ 2026
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
